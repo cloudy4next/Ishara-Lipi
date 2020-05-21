@@ -61,9 +61,21 @@ def lipi(classes=None):
 
 
 
+'''
 
 
 
 
+checkpoint = ModelCheckpoint("lol.h5",monitor='val_accuracy',verbose=1,save_best_only=True,mode='max')
+callback_list = [checkpoint]
 
+model = lipi( classes=36)
+model.summary()
+plot_model(model, to_file='model_plot.png', show_shapes=True, show_layer_names=True)
+model.compile(optimizer=keras.optimizers.Adam(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
+
+
+
+history = model.fit(x_train, y_train, validation_split = 0.2,batch_size=64 ,callbacks=callback_list,epochs=50,verbose=1)
     
+'''
