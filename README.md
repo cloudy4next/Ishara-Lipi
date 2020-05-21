@@ -1,8 +1,12 @@
 # Ishara-Lipi
 Classification of Bengali Sign Language Characters by Applying a Novel Deep Convolutional Neural Network
+## deef-net ##
+A lightweight model
 
 # Dataset link
 [Gdrive](https://drive.google.com/open?id=1kBAKViy_rhKXvPKBY83TqWV0-9YLdLEy)
+
+
 
 # training
  		
